@@ -6,7 +6,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [preact(), tailwindcss()],
   server: {
-    host: "0.0.0.0", // Listen on all network interfaces
-    port: process.env.PORT || 5173, // Use the PORT environment variable if available, otherwise default to 5173
+    host: "0.0.0.0",
+    port: 5173,
+  },
+  preview: {
+    host: "0.0.0.0",
+    port: 5173,
+    allowedHosts: ["mood-flix-web-app.onrender.com"],
   },
 });
