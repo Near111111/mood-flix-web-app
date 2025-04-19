@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [preact(), tailwindcss()],
   server: {
     host: "0.0.0.0", // Listen on all network interfaces
-    port: 5173, // You can change this port if needed
+    port: process.env.PORT || 5173, // Use the PORT environment variable if available, otherwise default to 5173
   },
 });
