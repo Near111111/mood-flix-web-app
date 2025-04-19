@@ -17,6 +17,7 @@
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
     "vite": "^6.3.1"
   }
 }
